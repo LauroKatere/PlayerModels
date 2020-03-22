@@ -11,7 +11,7 @@ package PlayerModels;
 	 }
 	 
 	 public PlayerModelType2(String Name, int Lifepoints, int Attackpoints, int defensivepoints) {
-		 super(String Name);
+		 super(Name);
 		 lifepoints = Lifepoints;
 		 attackpoint = Attackpoints;
 		 defensivepoint = defensivepoints;
@@ -19,14 +19,14 @@ package PlayerModels;
 	
 	 
 	 public PlayerModelType2(String Name, Group x) {
-		 super(String Name, Group x);
+		 super(Name,x);
 		 lifepoints = 0;
 		 attackpoint = 0;
 		 defensivepoint = 0;
 	 }
 	 
 	 public PlayerModelType2(String Name, Group x, int Lifepoints, int Attackpoints, int defensivepoints) {
-		 super(String Name, Group x);
+		 super(Name,x);
 		 lifepoints = Lifepoints;
 		 attackpoint = Attackpoints;
 		 defensivepoint = defensivepoints;
