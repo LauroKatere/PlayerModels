@@ -7,34 +7,34 @@ public class GroupType1 {
 	int NumberofMembers;
 	int NumberofTotalMembers;
 	
-	public Group(){
+	public GroupType1(){
 		GroupName = new String("No Name set");
 		PlayerList = new PlayerModelType1[10];
 		NumberofMembers =0;
 		NumberofTotalMembers= 10;
 	}
 	
-	public Group(String Name) {
+	public GroupType1(String Name) {
 		GroupName = new String(Name);
 		PlayerList = new PlayerModelType1[10];
 		NumberofMembers = 0;
 		NumberofTotalMembers= 10;
 	}
 	
-	public Group(int NumberofpossibleMembers) {
+	public GroupType1(int NumberofpossibleMembers) {
 		GroupName = new String("No Name set");
 		PlayerList = new PlayerModelType1[NumberofpossibleMembers];
 		NumberofMembers = 0;
 		NumberofTotalMembers = NumberofpossibleMembers;
 	}
 	
-	public Group(String Name ,int NumberofpossibleMembers) {
+	public GroupType1(String Name ,int NumberofpossibleMembers) {
 		GroupName = new String(Name);
 		PlayerList = new PlayerModelType1[NumberofpossibleMembers];
 		NumberofMembers = 0;
 	}
 	
-	public Group(String Name, PlayerModelType1 Player) {
+	public GroupType1(String Name, PlayerModelType1 Player) {
 		GroupName = new String(Name);
 		PlayerList = new PlayerModelType1[10];
 		NumberofMembers = 0;
@@ -42,7 +42,7 @@ public class GroupType1 {
 		addPlayer(Player);
 	}
 	
-	public Group(int NumberofpossibleMembers, PlayerModelType1 Player) {
+	public GroupType1(int NumberofpossibleMembers, PlayerModelType1 Player) {
 		GroupName = new String("No Name set");
 		PlayerList = new PlayerModelType1[NumberofpossibleMembers];
 		NumberofMembers = 0;
@@ -50,14 +50,14 @@ public class GroupType1 {
 		addPlayer(Player);
 	}
 	
-	public Group(String Name ,int NumberofpossibleMembers, PlayerModelType1 Player) {
+	public GroupType1(String Name ,int NumberofpossibleMembers, PlayerModelType1 Player) {
 		GroupName = new String(Name);
 		PlayerList = new PlayerModelType1[NumberofpossibleMembers];
 		NumberofMembers = 0;
 		addPlayer(Player);
 	}
 	
-	public Group(PlayerModelType1 Player) {
+	public GroupType1(PlayerModelType1 Player) {
 		GroupName = new String("No Name set");
 		PlayerList = new PlayerModelType1[10];
 		NumberofMembers =0;
