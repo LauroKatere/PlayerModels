@@ -1,4 +1,4 @@
-import java.security.acl.Group;
+package PlayerModels;
 
 public class MainTesting {
 
@@ -11,6 +11,7 @@ public class MainTesting {
 		
 		HeiﬂeSchnecken.addPlayer(Viola);
 		HeiﬂeSchnecken.removePlayer(Julia);
+		HeiﬂeSchnecken.searchPlayer(Niklas);
 		}
 
 }
