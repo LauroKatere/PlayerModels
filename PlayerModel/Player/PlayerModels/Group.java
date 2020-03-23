@@ -1,6 +1,6 @@
 package PlayerModels;
 
-public class Group {
+public class GroupType1 {
 	
 	String GroupName;
 	PlayerModelType1 [] PlayerList;
