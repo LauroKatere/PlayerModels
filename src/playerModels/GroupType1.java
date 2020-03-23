@@ -1,4 +1,4 @@
-package PlayerModels;
+package playerModels;
 
 public class GroupType1 {
 	
@@ -73,6 +73,7 @@ public class GroupType1 {
 			PlayerList[NumberofMembers] = Player;
 			Player.setGroup(getGroupname());
 			NumberofMembers = +1;
+			System.out.println("Player added");
 			return true;
 		}
 	}
@@ -115,3 +116,5 @@ public class GroupType1 {
 		GroupName= Groupname;
 	}
 }
+
+

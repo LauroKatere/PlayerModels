@@ -1,4 +1,4 @@
-package PlayerModels;
+package playerModels;
 
 public class PlayerModelType1 {
 	
@@ -12,7 +12,7 @@ public class PlayerModelType1 {
 		active = false;
 	}
 	
-	public PlayerModelType1(String Name, Group x) {
+	public PlayerModelType1(String Name, GroupType1 x) {
 		Playername = new String(Name);
 		Group = new String ();
 		visibility = true;

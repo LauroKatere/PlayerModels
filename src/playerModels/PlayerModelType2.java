@@ -1,10 +1,10 @@
-package PlayerModels;
+package playerModels;
  public class PlayerModelType2 extends PlayerModelType1{
 	 
 	 int lifepoints,attackpoint,defensivepoint;
 	 
 	 public PlayerModelType2(String Name) {
-		 super(String Name);
+		 super(Name);
 		 lifepoints = 0;
 		 attackpoint = 0;
 		 defensivepoint = 0;
@@ -18,14 +18,14 @@ package PlayerModels;
 	 }
 	
 	 
-	 public PlayerModelType2(String Name, Group x) {
+	 public PlayerModelType2(String Name, GroupType1 x) {
 		 super(Name,x);
 		 lifepoints = 0;
 		 attackpoint = 0;
 		 defensivepoint = 0;
 	 }
 	 
-	 public PlayerModelType2(String Name, Group x, int Lifepoints, int Attackpoints, int defensivepoints) {
+	 public PlayerModelType2(String Name, GroupType1 x, int Lifepoints, int Attackpoints, int defensivepoints) {
 		 super(Name,x);
 		 lifepoints = Lifepoints;
 		 attackpoint = Attackpoints;

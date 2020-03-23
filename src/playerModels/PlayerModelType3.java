@@ -1,4 +1,4 @@
-package PlayerModels;
+package playerModels;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -8,6 +8,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
 
+@SuppressWarnings("unused")
 public class PlayerModelType3 extends PlayerModelType1 {
 
 	
@@ -19,12 +20,12 @@ public class PlayerModelType3 extends PlayerModelType1 {
 				
 	}
 	
-	public PlayerModelType3(String Name, Group Groupname) {
+	public PlayerModelType3(String Name, GroupType1 Groupname) {
 		super(Name,Groupname);
 		logo = new File("..\\Player\\PlayerModels\\DefaultFiles\\Defaultuserlogo.png");
 	}
 	
-	public PlayerModelType3(String Name, Group Groupname, File userlogo) {
+	public PlayerModelType3(String Name, GroupType1 Groupname, File userlogo) {
 		super(Name,Groupname);
 		logo = userlogo;
 	}
@@ -34,6 +35,7 @@ public class PlayerModelType3 extends PlayerModelType1 {
 	}
 	
 	public void changetoDefault() {
-		logo= "..\\Player\\PlayerModels\\DefaultFiles\\Defaultuserlogo.png";
+		File logo2=new File("..\\Player\\PlayerModels\\DefaultFiles\\Defaultuserlogo.png");
+		logo = logo2;
 	}
 }
