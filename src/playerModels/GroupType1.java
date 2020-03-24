@@ -32,6 +32,7 @@ public class GroupType1 {
 		GroupName = new String(Name);
 		PlayerList = new PlayerModelType1[NumberofpossibleMembers];
 		NumberofMembers = 0;
+		NumberofTotalMembers = NumberofpossibleMembers;
 	}
 	
 	public GroupType1(String Name, PlayerModelType1 Player) {
@@ -39,7 +40,7 @@ public class GroupType1 {
 		PlayerList = new PlayerModelType1[10];
 		NumberofMembers = 0;
 		NumberofTotalMembers= 10;
-		addPlayer(Player);
+		this.addPlayer(Player);
 	}
 	
 	public GroupType1(int NumberofpossibleMembers, PlayerModelType1 Player) {
@@ -47,14 +48,14 @@ public class GroupType1 {
 		PlayerList = new PlayerModelType1[NumberofpossibleMembers];
 		NumberofMembers = 0;
 		NumberofTotalMembers = NumberofpossibleMembers;
-		addPlayer(Player);
+		this.addPlayer(Player);
 	}
 	
 	public GroupType1(String Name ,int NumberofpossibleMembers, PlayerModelType1 Player) {
 		GroupName = new String(Name);
 		PlayerList = new PlayerModelType1[NumberofpossibleMembers];
 		NumberofMembers = 0;
-		addPlayer(Player);
+		this.addPlayer(Player);
 	}
 	
 	public GroupType1(PlayerModelType1 Player) {
@@ -62,14 +63,16 @@ public class GroupType1 {
 		PlayerList = new PlayerModelType1[10];
 		NumberofMembers =0;
 		NumberofTotalMembers= 10;
-		addPlayer(Player);
+		this.addPlayer(Player);
 	}
 
 	public boolean addPlayer(PlayerModelType1 Player) {
 		
-		if(NumberofMembers==NumberofTotalMembers)
+		if(NumberofMembers==NumberofTotalMembers) {
+			System.out.println("Group can not contain more Players");
 			return false;
-		else {
+		}
+			else{
 			PlayerList[NumberofMembers] = Player;
 			Player.setGroup(getGroupname());
 			NumberofMembers = +1;
@@ -89,6 +92,7 @@ public class GroupType1 {
 				}while(x<=NumberofMembers);
 				Player.setGroup("No Group set");
 				NumberofMembers = -1;
+				System.out.println("Player removed");
 				return true;
 			}
 			else {

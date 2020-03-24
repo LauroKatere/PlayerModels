@@ -14,7 +14,7 @@ public class Main {
 		if(true==HeiﬂeSchnecken.searchPlayerinGroup(Niklas))
 			System.out.println("Player is in the Group");
 		else
-			System.out.println("Player is not in this Group");
+			System.out.println("Player is not in this Group"); 
 	}
 
 }
