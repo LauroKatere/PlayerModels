@@ -1,5 +1,6 @@
 package playerModels;
 
+
 public class GroupType1 {
 	
 	String GroupName;
@@ -83,19 +84,23 @@ public class GroupType1 {
 	
 	public boolean removePlayer(PlayerModelType1 Player) {
 		int x=0;
+		System.out.println("Test1");
 		do {
-			if(Player.equals(PlayerList[x])) {
+			System.out.println("Test2");
+			if(PlayerList[x].equals(Player)) {
 				
 				do {
 				PlayerList[x]= PlayerList[x+1];
 				x = +1;
-				}while(x<=NumberofMembers);
+				System.out.println("Test4");
+				}while(x<NumberofMembers);
 				Player.setGroup("No Group set");
 				NumberofMembers = -1;
 				System.out.println("Player removed");
 				return true;
 			}
 			else {
+				System.out.println("Test3");
 				x = +1;	
 			}
 			
@@ -107,9 +112,15 @@ public class GroupType1 {
 	public boolean searchPlayerinGroup(PlayerModelType1 Player) {
 		int x = 0;
 		do {
-			if(Player.equals(PlayerList[x]))
+			if(PlayerList[x].equals(Player)) {
+				System.out.println("Test5");
 				return true;
-		}while(x<=NumberofMembers);
+				}
+			else {
+				System.out.println("Test6");
+				x = +1;
+			}
+		}while(x<NumberofMembers);
 		return false;
 	}
 
